@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 3 and 4</title>
+    <style>
+        .error {
+          color: #FF0000;
+        }
+    </style>
+
+    <script src="Assignment3and4part2.js"></script>
+</head>
+
+<body>
+    <h1>BMI Calculator</h1>
+
+    <p><span class="error">All form fields must be completed for the BMI calculator to function.</span></p>
+
+    Pounds: <input type="text" size="4" id="poundsVal">
+    <span class="error" id="poundsErr"></span>
+    <br><br>
+
+    Inches: <input type="text" size="4" id="inchesVal">
+    <span class="error" id="inchesErr"></span>
+    <br><br>
+
+    Feet: <input type="text" size="4" id="feetVal">
+    <span class="error" id="feetErr"></span>
+    <br><br>
+	
+	<p id="category"></p>
+
+    Your Body Mass Index is <span style="font-weight: bold;" id="BMI">????</span> and you are <span style="font-weight: bold;" id="Category">????</span>.
+    <br><br>
+
+    <button onclick="BMI_calc()">Calculate</button>
+	
+	<h2>Retirement Age Calculator</h2>
+
+    <p><span class="error">All form fields must be completed for the retirement age calculator to function.</span></p>
+
+    Age: <input type="text" size="3" id="ageVal">
+    <span class="error" id="ageErr"></span>
+    <br><br>
+
+    Annual Salary: <input type="text" size="7" id="annualSalaryVal">
+    <span class="error" id="annualSalaryErr"></span>
+    <br><br>
+
+	Percentage Saved: <input type="text" size="3" id="savedPercentageVal">
+    <span class="error" id="savedPercentageErr"></span>
+    <br><br>
+
+    Savings Goal: <input type="text" size="7" id="savingsGoalVal">
+    <span class="error" id="savingsGoalErr"></span>
+    <br><br>
+
+    You should retire at age <span style="font-weight: bold;" id="retirementAge">????</span>.
+    <br><br>
+
+    <button onclick="Retirement_calc()">Calculate</button>
+
+</body>
+
+</html>
